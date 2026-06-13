@@ -35,6 +35,8 @@
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#services" class="nav-link">Services</a></li>
         <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#payment" class="nav-link">Payment</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
         <li><a href="#booking" class="nav-link">Booking</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -612,6 +614,209 @@
     </div>
   </section>
 
+  <!-- ==================== QR PAYMENT ==================== -->
+  <section id="payment" class="section payment-section" aria-labelledby="payment-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Secure Your Booking</p>
+        <h2 id="payment-heading" class="section-heading">Booking Fee <em>Payment</em></h2>
+        <p class="section-sub">Complete your booking by paying the initial fee. Scan the QR code and send your payment screenshot via WhatsApp.</p>
+      </div>
+
+      <div class="payment-wrapper">
+        <!-- QR Code Card -->
+        <div class="payment-qr-card glass-card reveal">
+          <div class="qr-header">
+            <span class="qr-icon">📱</span>
+            <h3>Scan to Pay</h3>
+          </div>
+          <div class="qr-container">
+            <!-- Replace src with your actual UPI/payment QR code image -->
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect fill='%23fff' width='256' height='256'/%3E%3Cg fill='%23000'%3E%3Crect x='20' y='20' width='60' height='60' rx='8'/%3E%3Crect x='176' y='20' width='60' height='60' rx='8'/%3E%3Crect x='20' y='176' width='60' height='60' rx='8'/%3E%3Crect x='40' y='40' width='20' height='20' fill='%23fff'/%3E%3Crect x='196' y='40' width='20' height='20' fill='%23fff'/%3E%3Crect x='40' y='196' width='20' height='20' fill='%23fff'/%3E%3Crect x='100' y='20' width='20' height='20'/%3E%3Crect x='140' y='20' width='20' height='20'/%3E%3Crect x='100' y='100' width='20' height='20'/%3E%3Crect x='140' y='100' width='20' height='20'/%3E%3Crect x='100' y='140' width='20' height='20'/%3E%3Crect x='140' y='140' width='20' height='20'/%3E%3Crect x='100' y='180' width='20' height='20'/%3E%3Crect x='140' y='180' width='20' height='20'/%3E%3Crect x='180' y='100' width='20' height='20'/%3E%3Crect x='180' y='140' width='20' height='20'/%3E%3Crect x='60' y='100' width='20' height='20'/%3E%3Crect x='60' y='140' width='20' height='20'/%3E%3Crect x='20' y='100' width='20' height='20'/%3E%3Crect x='20' y='140' width='20' height='20'/%3E%3Crect x='100' y='60' width='20' height='20'/%3E%3Crect x='140' y='60' width='20' height='20'/%3E%3C/g%3E%3C/svg%3E" alt="Payment QR Code" class="qr-image" id="payment-qr" />
+            <p class="qr-placeholder-text">Replace with your UPI/Payment QR</p>
+          </div>
+          <div class="qr-instructions">
+            <div class="instruction-step">
+              <span class="step-num">1</span>
+              <span>Open your UPI/Banking app</span>
+            </div>
+            <div class="instruction-step">
+              <span class="step-num">2</span>
+              <span>Scan the QR code above</span>
+            </div>
+            <div class="instruction-step">
+              <span class="step-num">3</span>
+              <span>Pay the booking fee</span>
+            </div>
+            <div class="instruction-step">
+              <span class="step-num">4</span>
+              <span>Send screenshot via WhatsApp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp Action Card -->
+        <div class="payment-whatsapp-card glass-card reveal delay-1">
+          <div class="whatsapp-header">
+            <span class="whatsapp-icon">💬</span>
+            <h3>Send Payment Proof</h3>
+          </div>
+          <p class="whatsapp-desc">After making the payment, click the button below to send your payment screenshot via WhatsApp. This confirms your booking.</p>
+          
+          <a href="https://wa.me/918283860847?text=Hello%20ELIM%20Hair%20%26%20Beauty!%20I've%20made%20the%20booking%20fee%20payment.%20Here's%20my%20payment%20screenshot." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-whatsapp"
+             id="whatsapp-payment-btn">
+            <svg class="whatsapp-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Send on WhatsApp
+          </a>
+
+          <div class="payment-details">
+            <div class="detail-row">
+              <span class="detail-label">Business Number:</span>
+              <a href="tel:+918283860847">+91 8283860847</a>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Response Time:</span>
+              <span>Within 2 hours</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Availability:</span>
+              <span>Mon–Sat, 9 AM – 7 PM</span>
+            </div>
+          </div>
+
+          <div class="payment-note">
+            <span class="note-icon">ℹ️</span>
+            <p><strong>Note:</strong> Your booking is confirmed only after we receive and verify your payment screenshot on WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOG ==================== -->
+  <section id="blog" class="section blog-section" aria-labelledby="blog-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Beauty Insights</p>
+        <h2 id="blog-heading" class="section-heading">Latest From Our <em>Blog</em></h2>
+        <p class="section-sub">Tips, trends, and transformations from our team of expert stylists.</p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <article class="blog-card glass-card reveal" tabindex="0">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80" alt="Woman with healthy styled hair" loading="lazy" />
+            <span class="blog-category">Hair Care</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">📅 Dec 15, 2024</span>
+              <span class="blog-read-time">⏱️ 5 min read</span>
+            </div>
+            <h3 class="blog-title">5 Essential Tips for Maintaining Healthy Hair in Winter</h3>
+            <p class="blog-excerpt">Discover how to protect your hair from harsh winter conditions with these expert-recommended care routines and products.</p>
+            <a href="#" class="blog-link">Read More <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-card glass-card reveal delay-1" tabindex="0">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80" alt="Bridal makeup setup" loading="lazy" />
+            <span class="blog-category">Bridal</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">📅 Dec 10, 2024</span>
+              <span class="blog-read-time">⏱️ 7 min read</span>
+            </div>
+            <h3 class="blog-title">Your Complete Bridal Beauty Timeline: 6 Months to Perfection</h3>
+            <p class="blog-excerpt">Plan your bridal beauty journey with our comprehensive timeline covering hair, makeup, and skincare milestones.</p>
+            <a href="#" class="blog-link">Read More <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="blog-card glass-card reveal delay-2" tabindex="0">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80" alt="Hair coloring process" loading="lazy" />
+            <span class="blog-category">Coloring</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">📅 Dec 5, 2024</span>
+              <span class="blog-read-time">⏱️ 6 min read</span>
+            </div>
+            <h3 class="blog-title">Balayage vs Highlights: Which Coloring Technique is Right for You?</h3>
+            <p class="blog-excerpt">Understanding the differences between popular coloring techniques to help you make the best choice for your hair type.</p>
+            <a href="#" class="blog-link">Read More <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Blog Post 4 -->
+        <article class="blog-card glass-card reveal" tabindex="0">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80" alt="Makeup products and brushes" loading="lazy" />
+            <span class="blog-category">Makeup</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">📅 Nov 28, 2024</span>
+              <span class="blog-read-time">⏱️ 4 min read</span>
+            </div>
+            <h3 class="blog-title">Achieving Flawless Makeup: Pro Tips from Our Artists</h3>
+            <p class="blog-excerpt">Learn the secrets to long-lasting, picture-perfect makeup application from ELIM's professional makeup artists.</p>
+            <a href="#" class="blog-link">Read More <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Blog Post 5 -->
+        <article class="blog-card glass-card reveal delay-1" tabindex="0">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80" alt="Braided hairstyle" loading="lazy" />
+            <span class="blog-category">Styling</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">📅 Nov 20, 2024</span>
+              <span class="blog-read-time">⏱️ 5 min read</span>
+            </div>
+            <h3 class="blog-title">Protective Styling: Why Braids Are More Than Just Beautiful</h3>
+            <p class="blog-excerpt">Explore the benefits of protective styling and how braids can promote hair growth while keeping you stylish.</p>
+            <a href="#" class="blog-link">Read More <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Blog Post 6 -->
+        <article class="blog-card glass-card reveal delay-2" tabindex="0">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80" alt="Skincare treatment" loading="lazy" />
+            <span class="blog-category">Skincare</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">📅 Nov 15, 2024</span>
+              <span class="blog-read-time">⏱️ 6 min read</span>
+            </div>
+            <h3 class="blog-title">The Ultimate Guide to Glowing Skin: Treatments That Work</h3>
+            <p class="blog-excerpt">From facials to advanced treatments, discover the path to radiant, healthy skin with our expert recommendations.</p>
+            <a href="#" class="blog-link">Read More <span>→</span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="blog-cta reveal">
+        <a href="#" class="btn-primary">View All Posts</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== BOOKING POLICY ==================== -->
   <section class="section policy-section" aria-labelledby="policy-heading">
     <div class="container">
@@ -753,6 +958,8 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#payment">Payment</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#booking">Book Now</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
