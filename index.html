@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ELIM Hair & Beauty — Luxury hair and beauty salon offering premium styling, treatments, coloring, braiding, makeup, and bridal packages." />
+  <meta name="keywords" content="hair salon, beauty salon, luxury salon, hair styling, bridal makeup, hair treatments, ELIM beauty" />
+  <meta name="author" content="ELIM Hair & Beauty" />
+  <meta property="og:title" content="ELIM Hair & Beauty — Luxury Salon Experience" />
+  <meta property="og:description" content="Premium hair and beauty services in an elegant, relaxing environment." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/elim.png" />
+  <meta name="theme-color" content="#FF4FA3" />
+  <title>ELIM Hair & Beauty — Luxury Salon Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light-mode">
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="ELIM Hair & Beauty Home">
+        <span class="logo-script">Elim</span>
+        <span class="logo-sub">HAIR &amp; BEAUTY</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#booking" class="nav-link">Booking</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <span class="theme-icon sun">☀️</span>
+          <span class="theme-icon moon">🌙</span>
+        </button>
+        <a href="#booking" class="btn-nav-book">Book Now</a>
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="home" class="hero" aria-label="Hero">
+    <!-- Animated blobs -->
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="blob blob-3" aria-hidden="true"></div>
+
+    <!-- Floral decorations -->
+    <div class="floral floral-tl" aria-hidden="true">✿</div>
+    <div class="floral floral-tr" aria-hidden="true">✿</div>
+    <div class="floral floral-bl" aria-hidden="true">❀</div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-up">Welcome to ELIM</p>
+      <h1 class="hero-headline fade-up delay-1">
+        Luxury Hair &amp;<br/><em>Beauty Experience</em>
+      </h1>
+      <p class="hero-sub fade-up delay-2">
+        Where artistry meets elegance. Premium styling, transformative treatments,
+        and a sanctuary of beauty — crafted just for you.
+      </p>
+      <div class="hero-cta fade-up delay-3">
+        <a href="#booking" class="btn-primary">Book Appointment</a>
+        <a href="#portfolio" class="btn-ghost">View Portfolio</a>
+      </div>
+
+      <!-- Floating glass card -->
+      <div class="hero-glass-card fade-up delay-4" aria-label="Quick stats">
+        <div class="hero-stat">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">Years of Artistry</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="stat-num">2K+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="stat-num">15K+</span>
+          <span class="stat-label">Transformations</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero image mosaic -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-img-stack">
+        <div class="hero-img hero-img-main">
+          <img src="images/elim4.jpg" alt="African woman smiling while getting her hair done at salon" loading="lazy" />
+        </div>
+        <div class="hero-img hero-img-sm top">
+          <img src="https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?w=300&q=80" alt="Braided woman radiant natural style" loading="lazy" />
+        </div>
+        <div class="hero-img hero-img-sm bottom">
+          <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=300&q=80" alt="Beautiful woman with natural afro" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+      <span class="scroll-dot"></span>
+      <span class="scroll-text">Scroll</span>
+    </a>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="section about-section" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Image layout -->
+        <div class="about-images reveal">
+          <div class="about-img-main">
+            <img src="images/elim6.jpg" alt="Two African women in a hair styling session" loading="lazy" />
+          </div>
+          <div class="about-img-accent">
+            <img src="https://images.unsplash.com/photo-1535588706069-af8f2d837332?w=300&q=80" alt="African woman with gorgeous natural hair" loading="lazy" />
+          </div>
+          <div class="about-badge glass-card" aria-label="Premium quality badge">
+            <span class="badge-icon">✦</span>
+            <span>Premium Quality</span>
+          </div>
+        </div>
+
+        <!-- Text content -->
+        <div class="about-content reveal delay-1">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 id="about-heading" class="section-heading">Beauty Is Our <em>Passion</em></h2>
+          <p class="about-text">
+            ELIM Hair &amp; Beauty was born from a deep love of the craft and a desire to create a space where every client feels celebrated. We believe beauty is personal — not a trend, not a template, but a conversation between you and your stylist.
+          </p>
+          <p class="about-text">
+            Our team of seasoned artists brings years of international training and local warmth to every appointment. From everyday elegance to show-stopping bridal looks, we pour intention into every detail.
+          </p>
+          <div class="about-values">
+            <div class="value-item">
+              <span class="value-icon">🌸</span>
+              <div>
+                <strong>Artistry First</strong>
+                <p>Every look is a bespoke creation</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">✨</span>
+              <div>
+                <strong>Premium Products</strong>
+                <p>Only the finest formulas touch your hair</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">💖</span>
+              <div>
+                <strong>You-Centered Care</strong>
+                <p>Your vision, your comfort, always</p>
+              </div>
+            </div>
+          </div>
+          <a href="#booking" class="btn-primary mt-lg">Book a Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES ==================== -->
+  <section id="services" class="section services-section" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2 id="services-heading" class="section-heading">Our <em>Services</em></h2>
+        <p class="section-sub">Indulge in our full menu of luxury beauty treatments, each delivered with precision and care.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card -->
+        <article class="service-card glass-card reveal" tabindex="0">
+          <div class="service-icon" aria-hidden="true">💇‍♀️</div>
+          <h3 class="service-name">Hair Styling</h3>
+          <p class="service-desc">From sleek blowouts to voluminous curls — expert styling for every occasion, every hair type.</p>
+          <a href="#booking" class="service-link">Book Now <span>→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal delay-1" tabindex="0">
+          <div class="service-icon" aria-hidden="true">🌿</div>
+          <h3 class="service-name">Hair Treatments</h3>
+          <p class="service-desc">Deep conditioning, keratin, scalp therapy — restore your hair's health and luminous shine.</p>
+          <a href="#booking" class="service-link">Book Now <span>→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal delay-2" tabindex="0">
+          <div class="service-icon" aria-hidden="true">🎨</div>
+          <h3 class="service-name">Coloring</h3>
+          <p class="service-desc">Balayage, highlights, vivid fashion colors — our colorists craft masterpieces that turn heads.</p>
+          <a href="#booking" class="service-link">Book Now <span>→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal delay-3" tabindex="0">
+          <div class="service-icon" aria-hidden="true">🌺</div>
+          <h3 class="service-name">Braiding</h3>
+          <p class="service-desc">Intricate protective styles, box braids, knotless braids — celebrating texture and tradition.</p>
+          <a href="#booking" class="service-link">Book Now <span>→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal delay-1" tabindex="0">
+          <div class="service-icon" aria-hidden="true">💄</div>
+          <h3 class="service-name">Makeup</h3>
+          <p class="service-desc">Flawless finishes for every look — editorial, everyday glam, or event-ready artistry.</p>
+          <a href="#booking" class="service-link">Book Now <span>→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal delay-2" tabindex="0">
+          <div class="service-icon" aria-hidden="true">✨</div>
+          <h3 class="service-name">Beauty Treatments</h3>
+          <p class="service-desc">Facials, lash lifts, brow shaping — a full suite of beauty rituals for complete renewal.</p>
+          <a href="#booking" class="service-link">Book Now <span>→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal delay-3" tabindex="0">
+          <div class="service-icon" aria-hidden="true">👑</div>
+          <h3 class="service-name">Bridal Packages</h3>
+          <p class="service-desc">Curated bridal journeys — hair, makeup, trials, and on-the-day glam for your perfect day.</p>
+          <a href="#booking" class="service-link">Book Now <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO ==================== -->
+  <section id="portfolio" class="section portfolio-section" aria-labelledby="portfolio-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Work</p>
+        <h2 id="portfolio-heading" class="section-heading">Portfolio &amp; <em>Gallery</em></h2>
+        <p class="section-sub">A glimpse into the artistry we bring to every appointment.</p>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="portfolio-filters reveal" role="group" aria-label="Filter gallery by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="styling">Styling</button>
+        <button class="filter-btn" data-filter="color">Color</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+        <button class="filter-btn" data-filter="makeup">Makeup</button>
+      </div>
+
+      <!-- Masonry grid -->
+      <div class="portfolio-grid" id="portfolio-grid" aria-label="Portfolio gallery">
+        <div class="portfolio-item reveal" data-category="styling">
+          <img src="images/elim3.jpg" alt="African woman with natural afro styling" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Styling</span>
+            <h4>Elegant Updo</h4>
+            <button class="portfolio-zoom" aria-label="View full image">+</button>
+          </div>
+        </div>
+        <div class="portfolio-item reveal delay-1" data-category="color">
+          <img src="images/elim5.jpg" alt="African woman showing off natural hair color" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Color</span>
+            <h4>Balayage Magic</h4>
+            <button class="portfolio-zoom" aria-label="View full image">+</button>
+          </div>
+        </div>
+        <div class="portfolio-item portfolio-item--tall reveal delay-2" data-category="bridal">
+          <img src="https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?w=400&q=80" alt="African bride with elegant braided hair" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Bridal</span>
+            <h4>Bridal Elegance</h4>
+            <button class="portfolio-zoom" aria-label="View full image">+</button>
+          </div>
+        </div>
+        <div class="portfolio-item reveal delay-3" data-category="makeup">
+          <img src="https://images.unsplash.com/photo-1526379142401-ca74e15f038a?w=400&q=80" alt="African woman glam makeup look" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Makeup</span>
+            <h4>Glamour Look</h4>
+            <button class="portfolio-zoom" aria-label="View full image">+</button>
+          </div>
+        </div>
+        <div class="portfolio-item reveal delay-1" data-category="styling">
+          <img src="https://images.unsplash.com/photo-1526387780285-2d05a3a97f70?w=400&q=80" alt="African woman with sleek styled hair" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Styling</span>
+            <h4>Vivid Transform</h4>
+            <button class="portfolio-zoom" aria-label="View full image">+</button>
+          </div>
+        </div>
+        <div class="portfolio-item reveal delay-1" data-category="styling">
+          <img src="images/elim1.jpg" alt="African woman with sleek styled hair" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Styling</span>
+            <h4>Vivid Transform</h4>
+            <button class="portfolio-zoom" aria-label="View full image">+</button>
+          </div>
+        </div>
+                <div class="portfolio-item reveal delay-1" data-category="styling">
+          <img src="images/elim7.jpg" alt="African woman with sleek styled hair" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Styling</span>
+            <h4>Vivid Transform</h4>
+            <button class="portfolio-zoom" aria-label="View full image">+</button>
+          </div>
+        </div>
+                <div class="portfolio-item reveal delay-1" data-category="styling">
+          <img src="images/elim8.jpg" alt="African woman with sleek styled hair" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Styling</span>
+            <h4>Vivid Transform</h4>
+            <button class="portfolio-zoom" aria-label="View full image">+</button>
+          </div>
+        </div>
+                <div class="portfolio-item reveal delay-1" data-category="styling">
+          <img src="images/elim9.jpg" alt="African woman with sleek styled hair" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Styling</span>
+            <h4>Vivid Transform</h4>
+            <button class="portfolio-zoom" aria-label="View full image">+</button>
+          </div>
+        </div>
+                <div class="portfolio-item reveal delay-1" data-category="styling">
+          <img src="images/elim10.jpg" alt="African woman with sleek styled hair" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Styling</span>
+            <h4>Sleek Blowout</h4>
+            <button class="portfolio-zoom" aria-label="View full image">+</button>
+          </div>
+        </div>
+        <div class="portfolio-item portfolio-item--tall reveal delay-2" data-category="color">
+          <img src="images/elim2.jpg" alt="African woman radiant natural hair outdoors" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Color</span>
+            <h4>Vivid Transform</h4>
+            <button class="portfolio-zoom" aria-label="View full image">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">✕</button>
+      <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="" />
+      </div>
+      <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CHOOSE US ==================== -->
+  <section class="section why-section" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Why ELIM</p>
+        <h2 id="why-heading" class="section-heading">The ELIM <em>Difference</em></h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card glass-card reveal">
+          <div class="why-icon" aria-hidden="true">🏆</div>
+          <h3>Experienced Stylists</h3>
+          <p>Our team brings years of training and real passion to every technique they master.</p>
+        </div>
+        <div class="why-card glass-card reveal delay-1">
+          <div class="why-icon" aria-hidden="true">🌿</div>
+          <h3>Quality Products</h3>
+          <p>We use only professional-grade, hair-loving products for results that last.</p>
+        </div>
+        <div class="why-card glass-card reveal delay-2">
+          <div class="why-icon" aria-hidden="true">💗</div>
+          <h3>Personalized Care</h3>
+          <p>Every appointment begins with a consultation — your unique needs guide every decision.</p>
+        </div>
+        <div class="why-card glass-card reveal delay-3">
+          <div class="why-icon" aria-hidden="true">🕊️</div>
+          <h3>Relaxing Environment</h3>
+          <p>Our salon is your sanctuary — designed to calm your mind while we elevate your look.</p>
+        </div>
+        <div class="why-card glass-card reveal delay-1">
+          <div class="why-icon" aria-hidden="true">📅</div>
+          <h3>Flexible Booking</h3>
+          <p>Online booking, clear policies, and easy rescheduling — beauty on your schedule.</p>
+        </div>
+        <div class="why-card glass-card reveal delay-2">
+          <div class="why-icon" aria-hidden="true">⭐</div>
+          <h3>Excellent Service</h3>
+          <p>From first contact to final look, your experience is our highest priority.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="section testimonials-section" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Client Love</p>
+        <h2 id="testimonials-heading" class="section-heading">What Our Clients <em>Say</em></h2>
+      </div>
+
+      <div class="testimonials-carousel reveal" aria-label="Client testimonials">
+        <div class="testimonial-track" id="testimonial-track">
+
+          <article class="testimonial-card glass-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-text">
+              "I walked in nervous and walked out feeling like a completely new woman. The attention to detail is unmatched — my hair has never looked this beautiful."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">A</div>
+              <div>
+                <cite class="testimonial-name">Amara O.</cite>
+                <p class="testimonial-role">Regular Client</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card glass-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-text">
+              "ELIM did my bridal hair and makeup. Every single guest complimented me all night. I felt like royalty. I cannot recommend them highly enough!"
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">P</div>
+              <div>
+                <cite class="testimonial-name">Priya R.</cite>
+                <p class="testimonial-role">Bridal Client</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card glass-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-text">
+              "The coloring here is an art form. My balayage looks so natural and dimensional. The salon itself is gorgeous — I feel pampered every time."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">Z</div>
+              <div>
+                <cite class="testimonial-name">Zara M.</cite>
+                <p class="testimonial-role">Color Client</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card glass-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-text">
+              "My braids are always perfect and they last for weeks. The team really takes their time and the results are worth every penny."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">N</div>
+              <div>
+                <cite class="testimonial-name">Ngozi K.</cite>
+                <p class="testimonial-role">Braiding Client</p>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+
+        <!-- Carousel controls -->
+        <div class="carousel-controls" aria-label="Carousel controls">
+          <button id="carousel-prev" class="carousel-btn" aria-label="Previous testimonial">‹</button>
+          <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Testimonial navigation"></div>
+          <button id="carousel-next" class="carousel-btn" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BOOKING ==================== -->
+  <section id="booking" class="section booking-section" aria-labelledby="booking-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Reserve Your Seat</p>
+        <h2 id="booking-heading" class="section-heading">Book Your <em>Appointment</em></h2>
+        <p class="section-sub">Fill in your details below and we'll confirm your appointment within 24 hours.</p>
+      </div>
+
+      <div class="booking-wrapper">
+        <div class="booking-form-wrap glass-card reveal">
+          <!-- 
+            ============================================================
+            GOOGLE CALENDAR API INTEGRATION POINT
+            ------------------------------------------------------------
+            When integrating Google Calendar:
+            1. On form submit, call the Google Calendar API to:
+               - Create an event with: date, time, service, client name, phone, email
+               - Send email confirmation via Gmail API
+            2. Replace the static success message with a dynamic confirmation
+               showing the generated Google Calendar event link.
+            3. Required OAuth scopes:
+               - https://www.googleapis.com/auth/calendar.events
+               - https://www.googleapis.com/auth/gmail.send
+            ============================================================
+          -->
+          <form id="booking-form" novalidate aria-label="Appointment booking form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="client-name">Full Name *</label>
+                <input type="text" id="client-name" name="name" placeholder="Your full name" required autocomplete="name" />
+                <span class="form-error" role="alert" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="client-phone">Phone Number *</label>
+                <input type="tel" id="client-phone" name="phone" placeholder="+91 00000 00000" required autocomplete="tel" />
+                <span class="form-error" role="alert" id="phone-error"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="client-email">Email Address *</label>
+                <input type="email" id="client-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                <span class="form-error" role="alert" id="email-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="service-select">Service *</label>
+                <!-- INTEGRATION: Dynamically populate from your services database -->
+                <select id="service-select" name="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="hair-styling">Hair Styling</option>
+                  <option value="hair-treatments">Hair Treatments</option>
+                  <option value="coloring">Coloring</option>
+                  <option value="braiding">Braiding</option>
+                  <option value="makeup">Makeup</option>
+                  <option value="beauty-treatments">Beauty Treatments</option>
+                  <option value="bridal">Bridal Package</option>
+                </select>
+                <span class="form-error" role="alert" id="service-error"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="appt-date">Preferred Date *</label>
+                <!-- INTEGRATION: Disable already-booked dates via Google Calendar API free/busy query -->
+                <input type="date" id="appt-date" name="date" required />
+                <span class="form-error" role="alert" id="date-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="appt-time">Preferred Time *</label>
+                <!-- INTEGRATION: Populate available slots from Google Calendar API -->
+                <select id="appt-time" name="time" required>
+                  <option value="" disabled selected>Select a time</option>
+                  <option value="09:00">9:00 AM</option>
+                  <option value="10:00">10:00 AM</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="15:00">3:00 PM</option>
+                  <option value="16:00">4:00 PM</option>
+                  <option value="17:00">5:00 PM</option>
+                </select>
+                <span class="form-error" role="alert" id="time-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="client-message">Additional Notes</label>
+              <textarea id="client-message" name="message" rows="4" placeholder="Any special requests, allergies, or questions..."></textarea>
+            </div>
+            <!-- INTEGRATION: On submit, POST to your backend endpoint which calls Google Calendar API -->
+            <button type="submit" class="btn-primary btn-full" id="submit-btn">
+              <span class="btn-text">Book My Appointment</span>
+              <span class="btn-loading" hidden>Booking...</span>
+            </button>
+          </form>
+
+          <!-- Success message (shown after form submit) -->
+          <div id="booking-success" class="booking-success" hidden aria-live="polite">
+            <div class="success-icon">✓</div>
+            <h3>You're Booked!</h3>
+            <p>We've received your request and will confirm your appointment within 24 hours. Check your email for details.</p>
+          </div>
+        </div>
+
+        <!-- Booking info panel -->
+        <div class="booking-info reveal delay-1">
+          <div class="booking-info-card glass-card">
+            <h3 class="booking-info-title">📍 Visit Us</h3>
+            <p>Ludhiana, Punjab, India</p>
+          </div>
+          <div class="booking-info-card glass-card">
+            <h3 class="booking-info-title">📞 Call Us</h3>
+            <a href="tel:+918283860847">+91 8283860847</a>
+          </div>
+          <div class="booking-info-card glass-card">
+            <h3 class="booking-info-title">🕐 Salon Hours</h3>
+            <p>Monday – Saturday<br/>9:00 AM – 7:00 PM</p>
+            <p>Sunday — By Appointment</p>
+          </div>
+          <div class="booking-info-card glass-card">
+            <h3 class="booking-info-title">📸 Instagram</h3>
+            <a href="https://instagram.com/elimbeauty_" target="_blank" rel="noopener noreferrer">@elimbeauty_</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BOOKING POLICY ==================== -->
+  <section class="section policy-section" aria-labelledby="policy-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Important to Know</p>
+        <h2 id="policy-heading" class="section-heading">Booking <em>Policy</em></h2>
+        <p class="section-sub">We want your experience to be seamless. Please read our booking terms.</p>
+      </div>
+
+      <div class="policy-grid">
+        <div class="policy-card glass-card reveal">
+          <div class="policy-icon" aria-hidden="true">📅</div>
+          <h3>Plan Ahead</h3>
+          <p>Appointments should be booked <strong>5–7 days in advance</strong>, preferably earlier, to secure your preferred date and time.</p>
+        </div>
+        <div class="policy-card glass-card reveal delay-1">
+          <div class="policy-icon" aria-hidden="true">💳</div>
+          <h3>Booking Fee</h3>
+          <p>A <strong>booking fee</strong> is required to secure your appointment. This fee is <strong>fully adjustable</strong> toward your final service cost.</p>
+        </div>
+        <div class="policy-card glass-card reveal delay-2">
+          <div class="policy-icon" aria-hidden="true">⚡</div>
+          <h3>Emergency Bookings</h3>
+          <p>Bookings made <strong>3 days or less</strong> before your appointment attract an additional <strong>late booking fee</strong>, paid together with the booking fee.</p>
+        </div>
+        <div class="policy-card glass-card reveal delay-3">
+          <div class="policy-icon" aria-hidden="true">🔄</div>
+          <h3>Cancellations</h3>
+          <p>Cancellations <strong>more than 48 hours</strong> before your appointment are eligible for a refund. Within 48 hours — <strong>non-refundable</strong>.</p>
+        </div>
+        <div class="policy-card glass-card reveal delay-1">
+          <div class="policy-icon" aria-hidden="true">🚫</div>
+          <h3>No-Shows</h3>
+          <p>Clients who do not attend their appointment without notice <strong>automatically forfeit</strong> their booking fee.</p>
+        </div>
+        <div class="policy-card glass-card reveal delay-2">
+          <div class="policy-icon" aria-hidden="true">📝</div>
+          <h3>Rescheduling</h3>
+          <p>Appointments may be <strong>rescheduled once at no cost</strong> outside the 48-hour window. Rescheduling after a late cancellation or no-show requires a new booking fee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 id="contact-heading" class="section-heading">Say <em>Hello</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact form -->
+        <div class="contact-form-wrap glass-card reveal">
+          <form id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-msg">Message</label>
+              <textarea id="contact-msg" name="message" rows="5" placeholder="What can we help you with?" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact info + map -->
+        <div class="contact-info reveal delay-1">
+          <div class="contact-info-items glass-card">
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+918283860847">+91 8283860847</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">📸</span>
+              <div>
+                <h4>Instagram</h4>
+                <a href="https://instagram.com/elimbeauty_" target="_blank" rel="noopener noreferrer">@elimbeauty_</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <div>
+                <h4>Location</h4>
+                <p>Ludhiana, Punjab, India</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Maps placeholder -->
+          <!-- INTEGRATION: Replace iframe src with your actual Google Maps embed URL -->
+          <div class="map-placeholder glass-card" aria-label="Map location">
+            <div class="map-inner">
+              <span class="map-pin" aria-hidden="true">📍</span>
+              <p>ELIM Hair &amp; Beauty</p>
+              <p>Ludhiana, Punjab, India</p>
+              <a href="https://maps.google.com/?q=Ludhiana,Punjab,India" target="_blank" rel="noopener noreferrer" class="btn-ghost btn-sm">Open in Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo footer-logo" aria-label="ELIM Hair & Beauty Home">
+            <span class="logo-script">Elim</span>
+            <span class="logo-sub">HAIR &amp; BEAUTY</span>
+          </a>
+          <p class="footer-tagline">Where artistry meets elegance. Premium beauty crafted for you.</p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="https://instagram.com/elimbeauty_" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="tel:+918283860847" aria-label="Phone">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Quick Links</h4>
+          <ul role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#booking">Book Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Services</h4>
+          <ul role="list">
+            <li><a href="#services">Hair Styling</a></li>
+            <li><a href="#services">Hair Treatments</a></li>
+            <li><a href="#services">Coloring</a></li>
+            <li><a href="#services">Braiding</a></li>
+            <li><a href="#services">Makeup</a></li>
+            <li><a href="#services">Bridal Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Contact</h4>
+          <ul role="list">
+            <li><a href="tel:+918283860847">+91 8283860847</a></li>
+            <li><a href="https://instagram.com/elimbeauty_" target="_blank" rel="noopener noreferrer">@elimbeauty_</a></li>
+            <li><span>Ludhiana, Punjab, India</span></li>
+            <li><span>Mon–Sat: 9 AM – 7 PM</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> ELIM Hair &amp; Beauty. All rights reserved.</p>
+        <p>Crafted with <span aria-hidden="true">💖</span> for beauty lovers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
