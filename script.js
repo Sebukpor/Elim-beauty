@@ -633,6 +633,54 @@ const counterObserver = new IntersectionObserver(entries => {
 heroStats.forEach(stat => counterObserver.observe(stat));
 
 
+/* ==================== UPI ID COPY FUNCTIONALITY ==================== */
+const copyUpiBtn = document.getElementById('copy-upi-btn');
+const upiIdEl = document.getElementById('upi-id');
+const copySuccessMsg = document.getElementById('copy-success');
+
+if (copyUpiBtn && upiIdEl) {
+  copyUpiBtn.addEventListener('click', async () => {
+    const upiId = upiIdEl.textContent.trim();
+    
+    try {
+      await navigator.clipboard.writeText(upiId);
+      
+      // Show success message
+      if (copySuccessMsg) {
+        copySuccessMsg.classList.add('show');
+        
+        // Hide after animation completes
+        setTimeout(() => {
+          copySuccessMsg.classList.remove('show');
+        }, 2000);
+      }
+    } catch (err) {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = upiId;
+      textArea.style.position = 'fixed';
+      textArea.style.left = '-9999px';
+      document.body.appendChild(textArea);
+      textArea.select();
+      
+      try {
+        document.execCommand('copy');
+        if (copySuccessMsg) {
+          copySuccessMsg.classList.add('show');
+          setTimeout(() => {
+            copySuccessMsg.classList.remove('show');
+          }, 2000);
+        }
+      } catch (fallbackErr) {
+        console.error('Failed to copy UPI ID:', fallbackErr);
+      }
+      
+      document.body.removeChild(textArea);
+    }
+  });
+}
+
+
 /* ==================== INIT ==================== */
 console.log('%c✦ ELIM Hair & Beauty ✦', 'color: #FF4FA3; font-size: 16px; font-weight: bold;');
 console.log('%cBuilt with elegance and care.', 'color: #888; font-size: 12px;');
